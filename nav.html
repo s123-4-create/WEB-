@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        
+    }
+
+     .container{
+        display:flex; 
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        z-index: 90;
+    }
+
+    
+
+    .we{
+        padding-left: 20px;
+        margin-top:15px;
+    }
+
+    .ex{
+        padding-left: 20px;
+        font-size:16px;
+        font-family: cursive;
+        color: brown;
+    }
+
+    .item-card{
+        width:400px;
+        height:440px;
+        border: 2px solid ;
+        border-radius:15px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        padding-bottom: 40px;
+        margin: 10px 20px;
+    }
+
+    .item-image{
+       width:70%;
+       display: block;
+       margin:10px auto;
+       height:200px ;
+       object-fit: cover;
+    }
+
+    .item-title{
+        text-align: center;
+        font-size:29px ;
+    }
+
+    .item-description{
+        text-align: justify;
+        padding: 0 10px;
+        margin-bottom:30px;
+    }
+
+    .item-button{
+        display: block;
+        margin:0 auto;
+        padding: 5px 20px;
+        font-size:18px;
+        border-radius: 30px;
+        border:none;
+        background-color:rgb(210, 79, 31);
+    }
+
+    .navbar{
+        background-color:rgb(112, 92, 112)	;
+        color: azure;
+        text-align: center;
+        padding: 15px;
+        width: 100%;
+        position: sticky;
+        top:0;
+        z-index: 100;
+        display: flex;
+        align-items: center;
+        font-size:15px;
+        font-family:'Times New Roman', Times, serif;
+
+    }
+
+    .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px ;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+            text-decoration:underline;
+        }
+
+    .festive-logo{
+        height: 60px;
+    }
+
+    .right{
+        margin-left: 250px;
+    }
+
+    .home{
+        margin-left:200px;
+    }
+
+    .fest{
+        display: flex;
+        align-items: center;
+    }
+
+    .menu-item{
+        height: 30px;
+        display: none;
+    }
+
+
+    
+
+        
+        
+
+
+    /*Mobile */
+    @media (max-width:600px){
+        .item-title{
+            text-align:left ;
+            padding-left: 10px;
+            font-size: 22px;
+            margin: 5px;
+        }
+
+        .item-card{
+        width:400px;
+        height:420px;
+        }
+
+        .item-button{
+            font-size: 20px;
+            padding: 5px 20px;
+        }
+
+        .navbar a{
+            display: none;
+        }
+
+        .menu-item{
+           display: block;
+           margin-left: auto;
+           margin-right:30px;
+    } 
+
+    }
+
+    /* Tablet */
+    @media(min-width:601px) and (max-width:800px){
+
+        .item-card{
+            width: 300px;
+            height: 450px;
+        }
+
+        .item-description{
+            font-size: 15px;
+        }
+
+        .item-button{
+            font-size: 20px;
+            padding: 5px 20px;
+
+        }
+
+    
+    } 
+
+    /* Laptop */
+    @media(min-width:801px) and (max-width:1024px) {}
+
+         
+
+</style>
+
+
+<body>
+    
+    <div class="navbar">
+        <div class="fest">
+            <img src="images\festival-food.png" class="festive-logo" alt="festive">&nbsp;&nbsp;
+            <h2>Indian Festivals</h2>
+        </div>
+        <a href="#home" class="home">Home</a>
+        <a href="#about">About</a>
+        <a href="#festivals">Festivals</a>
+        <a href="#regions">Regions</a>
+        <a href="#celebrations">Celebrations</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+        <a href="#resources" class="right">Resources</a>
+
+        <img src="images\menu.png" class="menu-item" alt="menu">
+    </div>
+
+
+    <h1 class="we"> Welcome to Festivals in India</h1>
+    <p class="ex">Explore the vibrant culture and traditions of Indian festivals!</p>
+
+    
+<div class="container">
+    <div class="item-card">
+        <img src="images\rb_55802.png" class="item-image" alt="rb">
+        <h1 class="item-title">Makar-Sankranti</h1>
+        <p class="item-description">Makar Sankranti is a Hindu festival that celebrates the sun's transition from the Southern to the Northern Hemisphere, marking the end of winter and the beginning of spring.
+        Makar Sankranti is the only Hindu festival based on the solar calendar instead of the lunar. </p>
+       <button class="item-button">View more</button>
+    </div> 
+
+<div class="item-card">
+    <img src="images\rb_46777.png" class="item-image" alt="rb">
+    <h1 class="item-title">Diwali</h1>
+    <p class="item-description">Diwali is a festival of lights celebrated in India that marks the victory of good over evil. It usually takes place in October or November. 
+    Deepavali or Diwali is an Indian festival of lights. 
+    'Deepa' means lamp or light and'Vali' means string or row, and Deepavali means rows of lights.</p>
+    <button class="item-button">View more</button>
+</div> 
+
+<div class="item-card">
+    <img src="images\800233.png" class="item-image" alt="rb">
+    <h1 class="item-title">Dussehra</h1>
+    <p class="item-description"> Dussehra, also known as Vijayadashami, is a major Hindu festival that celebrates the triumph of good over evil. In the Ramayana, Lord Rama defeated the demon king Ravana who had kidnapped his wife, Sita. 
+        It is celebrated on the tenth day of the Ashvina month.
+ 
+    </p>
+   <button class="item-button">View more</button>
+</div> 
+
+<div class="item-card">
+    <img src="images\holi.png" class="item-image" alt="rb">
+    <h1 class="item-title">Happy Holi</h1>
+    <p class="item-description">Holi, also known as the festival of colors, is a Hindu celebration that marks the beginning of spring and the triumph of good over evil.
+     Holi is celebrated on the last full moon of the lunar month of Phalguna, which is usually in March. 
+    </p>
+   <button class="item-button">View more</button>
+</div> 
+
+<div class="item-card">
+    <img src="images\rb_19796.png" class="item-image" alt="rb">
+    <h1 class="item-title">Durga Pooja</h1>
+    <p class="item-description">Durga Puja is a 10-day Hindu festival that celebrates the goddess Durga's victory over the demon Mahishasura.
+         It is celebrated in India and by the Bengali diaspora. The festival is a time to worship the goddess.
+    </p>
+   <button class="item-button">View more</button>
+</div> 
+
+
+<div class="item-card">
+    <img src="images\2652.png" class="item-image" alt="rb">
+    <h1 class="item-title">Ganesh Chaturthi</h1>
+    <p class="item-description">Ganesh Chaturthi is a Hindu festival that celebrates the birth of the elephant-headed god Ganesha. It is also known as Vinayaka Chaturthi or Vinayaka Chavithi. 
+        Ganesh Chaturthi, in Hinduism, 10-day festival marking the birth of the elephant-headed deity Ganesha.
+    </p>
+   <button class="item-button">View more</button>
+</div> 
+
+<div class="item-card">
+    <img src="images\21469.png" class="item-image" alt="rb">
+    <h1 class="item-title">Krishn Janmashtami</h1>
+    <p class="item-description"> Janmashtami is a Hindu festival that celebrates the birth of Lord Krishna, the eighth incarnation of Lord Vishnu. It is also known as Krishna Janmashtami, Gokulashtami, Shrikrishna Jayanti.
+        Janmashtami is celebrated in many parts of India, including Mathura, Vrindavan, Dwarika. 
+    </p>
+   <button class="item-button">View more</button>
+</div> 
+
+
+
+
+</div>
+    
+</body>
+</html>
